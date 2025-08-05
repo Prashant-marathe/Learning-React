@@ -2,3 +2,8 @@
     background-color: khaki;
     font-weight: 500;
 }
+li button:active {
+  background-color: green !important; /* Change to your desired color */
+  border-color: darkgreen !important; /* Optional: Change border color as well */
+  color: white !important; /* Optional: Change text color */
+}

@@ -1,9 +1,9 @@
 import styles from "./Item.module.css"
 
-const Item = ({foodItem, handleOnClick}) => {
+const Item = ({foodItem, handleOnClick, bought}) => {
     return (
         <>
-        <li  className={`${styles['kg-item']} list-group-item`}>{foodItem}<button type="button" className="btn btn-primary float-end" onClick={handleOnClick}>Buy Now</button></li>
+        <li  className={`${styles['kg-item']} list-group-item ${bought && 'active'}`}>{foodItem}<button type="button" className="btn btn-primary float-end btn-custom" onClick={handleOnClick}>Buy Now</button></li>
         </>
     )
 }

@@ -1,8 +1,8 @@
 import styles from './inputBox.module.css'
 
-function InputBox() {
+function InputBox({calVal}) {
     return (
-         <input type="text" placeholder="0" className={styles.inputBox} />
+         <input type="text" placeholder="0" value={calVal} className={styles.inputBox} readOnly />
     )
 }
 

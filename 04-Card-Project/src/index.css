@@ -1,0 +1,132 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body{
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+  background-color: #111;
+}
+
+.parent {
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.card{
+  padding: 30px 30px;
+  width: 300px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 30px 15px; */
+  border-radius: 30px;
+}
+
+.card .top img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.card .top button {
+  border: 1px solid #dadada;
+  padding: 3px 7px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  color: #777575;
+  font-weight: 300;
+  border-radius: 3px;
+}
+
+.card .center {
+  /* background-color: lightblue; */
+  padding: 30px 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid rgb(197, 191, 191);
+}
+
+.card h3{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.card h3 span{
+  font-size: 8px;
+  color: #bebaba;
+  font-weight: 400;
+}
+.card h2 {
+  padding: 5px 0;
+  font-family: 600;
+}
+.card .center-bottom{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.card .center-bottom h4{
+  color: black;
+  background-color: #ececec;
+  padding: 3px 7px;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.bottom {
+  width: 100%;
+  /* padding: 30px 15px; */
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px ;
+}
+
+.bottom div h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.bottom div h5 {
+  color: #bebaba;
+  font-size: 8px;
+  margin-top: 2px;
+}
+
+.bottom button {
+  border: 1px solid #dadada;
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  font-size: 12px;
+  border-radius: 10px;
+}

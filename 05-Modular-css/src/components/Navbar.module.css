@@ -1,0 +1,25 @@
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.btn{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.logo{
+    font-size: 20px;
+    text-decoration: underline;
+    color: red;
+}

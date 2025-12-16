@@ -1,0 +1,10 @@
+.btn{
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  margin: 10px;
+  background-color: blue;
+}

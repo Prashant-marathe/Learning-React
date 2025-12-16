@@ -1,25 +1,25 @@
 import React from 'react'
 import {Bookmark} from 'lucide-react'
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card">
         <div className="top">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png?20171005153412" alt="" />
+          <img src={props.brandLogo} alt="" />
           <button>Save <Bookmark size={10} /> </button>
         </div>
 
         <div className="center">
-            <h3>Amazon <span>5 days ago</span></h3>
-            <h2>Graphic Design</h2>
+            <h3>{props.companyName} <span>{props.datePosted}</span></h3>
+            <h2>{props.post}</h2>
             <div className="center-bottom">
-              <h4>Part-Time</h4>
-              <h4>Flexible Schedule</h4>
+              <h4>{props.tag1}</h4>
+              <h4>{props.tag2}</h4>
             </div>
         </div>
         <div className="bottom">
           <div>
-            <h3>$150-220k</h3>
-            <h5>Kochi, India</h5>
+            <h3>${props.salary}/hr</h3>
+            <h5>{props.location}</h5>
           </div>
 
           <button>Apply now</button>

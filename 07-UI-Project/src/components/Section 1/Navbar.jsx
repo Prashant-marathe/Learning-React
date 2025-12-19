@@ -1,10 +1,11 @@
-import "@remixicon/react"
+
 
 const Navbar = () => {
   return (
-    <div className="h-10 bg-red text-white flex justify-between items-center p-10">
-        <h3 className="bg-black rounded-full py-2 px-5 text-[12px] uppercase font-semibold">Target Audience</h3>
-        <h3 className="bg-gray-300 rounded-full font-semibold py-2 px-4 text-[12px]"> <i class="ri-corner-down-right-line"></i>Digital Banking Platform</h3>
+    <div className="flex items-center justify-between py-6 px-16 mb-4">
+        <h4 className="text-white font-semibold bg-black rounded-full py-2 px-4 uppercase text-[11px]">Targer Audience</h4>
+        <button className="uppercase bg-gray-200 rounded-full px-4 p-2 text-[11px] font-semibold
+        ">Digital Banking Platform</button>
     </div>
   )
 }

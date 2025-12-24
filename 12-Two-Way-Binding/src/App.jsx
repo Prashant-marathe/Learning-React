@@ -1,20 +1,32 @@
-const App = () => {
+import { useState } from "react";
 
+const App = () => {
+  const [title, setTitle] = useState("");
   const formhandler = (e) => {
-    e.preventDefault()
-    console.log('Hello');
-  }
+    e.preventDefault();
+    console.log("Form Submitted by", title);
+    setTitle("");
+  };
 
   return (
     <div>
-      <form onSubmit={(e) => {
-        formhandler(e)
-      }}>
-        <input type="text" placeholder="Enter Your Name"/>
+      <form
+        onSubmit={(e) => {
+          formhandler(e);
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+          value={title}
+          onChange={(e) => {
+            setTitle(e.target.value);
+          }}
+        />
         <button>Submit</button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

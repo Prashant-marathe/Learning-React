@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+body{
+  background-color: black;
+  color:white;
+}
+
+.hero{
+  font-size: 100px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: underline;
+  text-wrap: nowrap;
+}

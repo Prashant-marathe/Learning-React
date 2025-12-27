@@ -8,11 +8,15 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Men from "./pages/Men";
 import Women from "./pages/Women";
+import Courses from "./pages/Courses";
+import CourseDetail from "./pages/CourseDetail";
+import Navbar2 from "./components/Navbar2";
 
 const App = () => {
   return (
     <div className="h-screen">
       <Navbar />
+      <Navbar2/>
 
       <Routes>
         <Route path="/" element={<Home />}>
@@ -21,9 +25,12 @@ const App = () => {
         <Route path="/about" element={<About />}>
           About
         </Route>
-        <Route path="/contact" element={<Contact />}>
-          Contact
+
+        {/* Now, we want to make it so whenever someone searches the route courses/anything (literal anything) then we should go to CourseDetail page. This is a example of Dynamic Routing */}
+        <Route path="/courses" element={<Courses />}>
+          Route
         </Route>
+        <Route path="/courses/:id" element={<CourseDetail/>}> Course Detail</Route>
 
         {/* Nested Routing */}
         <Route path="/product" element={<Product />}>
